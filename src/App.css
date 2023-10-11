@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "x_bamby";
+  src: url(./assets/x_bamby.ttf);
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-image: url("src/assets/espacio.png");
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+input#photo-date {
+  font-size: 25px;
+  padding: 14px 30px;
+  background-color: rgb(226, 191, 223);
+  color: black;
+  border-radius: 8px;
+  border: 5px solid rgba(179, 7, 159, 0.714);
+}
+
+img.logo {
+  height: 320px;
+  width: 360px;
+  padding: 0.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+img.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+img {
+  height: 880px;
+  width: 980px;
+  margin-top: 20px;
+  padding: 0.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+img:hover {
+  filter: drop-shadow(0 0 4em #f07954aa);
+}
+
+span {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-family: "Impact", "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+div.windows-pane {
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.1;
+  text-align: center;
+}
+
+h1.title {
+  font-family: "x_bamby";
+  font-size: 50px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 4px;
+}
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+a {
+  font-weight: 500;
+  color: white;
+  text-decoration: inherit;
+  line-height: 1.1;
+}
+a:hover {
+  color: white;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
